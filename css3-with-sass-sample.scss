@@ -1,0 +1,414 @@
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #2b2b2b;
+	font-family: 'ubuntu', sans-serif;
+	min-width: 320px;
+	
+	div[data-role=page] {
+		//background-color: white !important;
+	}
+	
+	div {
+		margin: 0;
+		padding: 0;
+	}
+	
+	a {
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	a, img {
+		border:none;
+		cursor: pointer;
+	}
+	
+	a:visited {
+		font-weight: bold;
+		text-decoration: none;
+	}
+	
+	a:hover {
+		text-decoration: none;
+	}
+	
+	:focus {
+		outline: none;
+	}
+	
+	hr {
+		border: 0;
+		height: 0;
+		border-top: 1px solid rgba(0, 0, 0, 0.1);
+		border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.right {
+		float: right;
+	}
+
+	.clear {
+		clear: both;
+	}
+
+	input, textarea {
+		border: 1px solid rgb(235, 235, 235) !important;
+		border-radius: 0 !important;
+		padding: 7px !important;
+	}
+	
+	.ui-input-text, ui-input-select {
+		border: none;
+		box-shadow: none;
+		border-radius: 0 !important;
+	}
+
+	#global-alert-msg, #alert-msg, .alert-msg {
+		font-size: .7em;
+		color: red;	
+	}
+	
+	.navbar {
+		margin-top: -25px;
+		margin-bottom: 20px;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		box-sizing: border-box;
+		li a {
+			 white-space : normal !important;
+		}
+	}
+	
+	#notifications-container {
+		padding: 20px;
+		.notification {
+			padding: 10px;
+			&.unread {
+				background-color: rgb(240, 240, 240);
+			}
+			&.read {
+				
+			}
+			.noti-ico {
+				float: left;
+				width: 30px;
+				height: 30px;
+				vertical-align: middle;
+				margin-top: -5px;
+			}
+			.noti-text {
+				margin-left: 15px;
+			}
+		}
+	}
+	
+	#accept-money, #new-invoice {
+		.ui-btn {
+			border-color: rgb(175, 175, 175);
+		}
+		.ui-btn.accept, .ui-btn.pay, .ui-btn.complete-invoice-payment {
+			background-color: #3eb249;
+			color: white;
+			text-shadow: none;
+		}
+		input {
+			width: 100%;
+			box-sizing: border-box;
+		}
+		h2 {
+			font-weight: normal;
+			margin-top: 0px;
+		}
+	}
+
+	#index {
+		#sign-up-form, #sign-in-form {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 20px;
+			width: 300px;
+			max-width: 95%;
+			height: auto !important;
+
+			input {
+				box-shadow: none;
+			}
+		}
+		#sign-in-form {
+			display: none;
+		}
+		#sign-in-link, #sign-up-link {
+			font-weight: bold;
+			cursor: pointer;
+			margin: 0 auto;
+			text-align: center;
+			width: 100%;
+			margin-top: 15px;
+			color: rgb(200, 200, 200);
+		}
+		#sign-up-link {
+			display: none;
+		}
+		#alert-msg {
+			padding: 0 20px;
+		}
+	}
+
+	#account {
+		#account-actions {
+			position: relative;
+			//padding-top: 20px;
+			background-color: white;
+			padding-bottom: 0px;
+			.action-btn {
+				box-sizing: border-box;
+				width: 50%;
+				margin: 0 !important;
+				display: inline-block;
+				background-size: 100%;
+			}
+			#send-money-btn {
+				&.light {
+					background-image: url('../img/send-money-light.png');
+				}
+				&.dark {
+					background-image: url('../img/send-money-dark.png');
+				}
+			}
+			#request-money-btn {
+				&.light {
+					background-image: url('../img/request-money-light.png');
+				}
+				&.dark {
+					background-image: url('../img/request-money-dark.png');
+				}
+			}
+			#btn-or {
+				padding: 5px;
+				font-size: 12px;
+				margin: 0 auto;
+				background-color: #9e9e9e;
+				text-align: center;
+				color: white;
+				width: 30px;
+				position: absolute;
+				left: 0; right: 0;
+				bottom: 0;
+				margin-bottom: 3px;
+			}
+		}
+	}
+
+	#send-money, #request-money {
+		.main-padding {
+			padding: 20px;
+			margin: 0 auto;
+			h3 {
+				text-align: center;
+			}
+			ul {
+				margin: 0 auto;
+				.ui-btn {
+					background-color: #3eb249 !important;
+					color: white;
+					text-shadow: none;
+				}
+			}
+		}
+		#send-money-form, #request-money-form {
+			input, textarea, select, .ui-btn span {
+				font-size: .9em;
+			}
+			label {
+				font-size: 1em;
+				margin-top: 25px;
+				&:first-of-type {
+					margin-top: 0;
+				}
+			}
+			.select-container .ui-btn {
+				background-color: white !important;
+				border: 1px solid rgb(235, 235, 235);
+				text-shadow: none;
+				box-shadow: none;
+				font-weight: normal;
+				text-align: left;
+				padding: 7px;
+				border-radius: 0;
+			}
+			.dollar-sign {
+				float:left;
+				padding: 7px;
+				clear: both;
+				padding-left: 0;
+				border-bottom: 1px solid #ebebeb;
+				font-size: .9em;
+			}
+			input[name=amount], input[name=recipient] {
+				border: none !important;
+				border-bottom: 1px solid #ebebeb !important;
+				padding-left: 0;
+			}
+			#itemize-invoice, #invoiceItems_add {
+				display: block;
+				margin: 30px 0;
+				font-size: .8em;
+			}
+			#invoiceItems_add {
+				margin-top: 0px;
+			}
+			#invoiceItems_noforms_template {
+				margin: 10px 0;
+				font-size: .8em;
+				color: gray;
+			}
+			#invoice-itemization {
+				display: none;
+				padding-top: 20px;
+				input {
+					width: 90% !important;
+					border: none !important;
+					border-bottom: 1px solid #eee !important;
+				}
+			}
+			#send-money-alert-msg, #request-money-alert-msg {
+				@extend #global-alert-msg;
+			}
+		}
+		#pin-entry, #pin-select {
+			#pin-entry-msg, #pin-select-msg {
+				font-size: .8em;
+				color: rgb(100, 100, 100);
+			}
+		}
+	}
+
+	#transactions {
+		.ui-table-columntoggle-btn {
+			display: none;
+		}
+		table {
+			font-size: .8em;
+			td.no-transactions {
+				display: none;
+			}
+		}
+		h3 {
+			margin-bottom: 0;
+		}
+		p {
+			font-size: .8em;
+			color: rgb(120, 120, 120);
+			padding: 0;
+			margin-top: 3px;
+			margin-bottom: 17px;
+		}
+	}
+
+	#add-funds {
+		#add-funds-form {
+			hr {
+				margin: 20px 0;
+			}
+			input[type=submit] {
+				background-color: #3eb249;
+			}
+			#add-funds-alert-msg {
+				@extend #global-alert-msg;
+			}
+		}
+	}
+
+	#transfer-funds {
+		#transfer-funds-form {
+			hr {
+				margin: 20px 0;
+			}
+			.ui-select {
+				display: none;
+			}
+			input[type=submit] {
+				background-color: #3eb249;
+			}
+			#transfer-funds-alert-msg {
+				@extend #global-alert-msg;
+			}
+		}
+	}
+
+	#account-settings {
+		#account-settings-form {
+			label {
+				font-weight: bold;
+			}
+			span.current-val {
+				font-size: .9em;
+			}
+			a {
+				font-size: .8em;
+				display: block;
+				margin-right: 15px;
+				text-align: right;
+				font-weight: normal;
+			}
+			input, .ui-btn {
+				display: none;
+			}
+		}
+	}
+
+	#payment-methods {
+		a {
+			font-weight: normal;
+			font-size: .8em;
+		}
+		.method-container {
+			img {
+				margin: 15px 0 30px 0;
+			}
+			.no-card-source, .no-bank-source {
+				margin-bottom: 30px;
+			}
+			.source {
+				height: 35px;
+				position: relative;
+				font-size: .8em;
+				color: rgb(80, 80, 80);
+				.delete {
+					margin-top: -1px;
+					font-size: 1.2em;
+				}
+				.verify {
+					margin-top: 1px;
+					margin-right: 10px;
+				}
+				.right {
+					display: inline-block;
+				}
+				.brand {
+					display: inline-block;
+					margin-left: 50px;
+					color: rgb(150, 150, 150);
+				}
+			}
+		}
+		form {
+			.desc {
+				font-size: .7em;
+				color: rgb(150, 150, 150);
+			}
+			input[name=exp-month], input[name=exp-year] {
+				width: 40%;
+			}
+			#add-bank-account-alert-msg, #add-card-alert-msg {
+				@extend #global-alert-msg;
+			}
+		}
+	}
+	
+}
+

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Make Friends and Find Meetup Groups - Palibi</title>
+	<link href="http://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css" />
+	<link rel="stylesheet" type="text/css" href="/plugins/MinimalForm/css/normalize.css" /><link rel="stylesheet" type="text/css" href="/plugins/MinimalForm/css/component.css" />
+	<script type="text/javascript" src="/js/plugins/jquery.min.js"></script>
+	<script type="text/javascript" src="/js/inboxer.js"></script>
+	<script type="text/javascript" src="/js/ajax.js"></script>
+	<script type="text/javascript" src="/js/forms.js"></script>
+	<script type="text/javascript" src="/js/login.js"></script><script type="text/javascript" src="/js/register.js"></script><script type="text/javascript" src="/js/index.js"></script><script type="text/javascript" src="/plugins/MinimalForm/js/modernizr.custom.js"></script><script type="text/javascript" src="/plugins/MinimalForm/js/classie.js"></script><script type="text/javascript" src="/plugins/MinimalForm/js/stepsForm.js"></script>
+	<script type="text/javascript" src="/js/ready.js"></script>
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+</head>
+<body> 
+
+<div id="lightscreen">
+	<div class="table">
+		<div class="cell">
+			<div id="text">
+				<div id="lightscreen-content-container">
+					<div class="close-button">&times;</div>
+					<div id="lightscreen-content">
+			
+						<div id="login-prompt">
+						<h3>Sign In</h3>
+						<form id="form-login" action="/scripts/form/login.php" method="post">
+							<div id="login-alert-msg"></div>
+							<label for="username-field">Username or Email Address: </label>
+							<input id="login-username-field" name="username-field" type="text" autocomplete="off" />
+						
+							<label for="password-field">Password: </label>
+							<input id="login-password-field" name="password-field" type="password" autocomplete="off"/>	
+						
+							<input type="submit" id="login-submit" name="submit" value="Log in" />
+						</form>
+						</div>  
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="content-container">
+			
+	<div id="top-half-container">
+	<div id="sign-in-button">
+		Already have an account? <a>Sign In</a>
+	</div>
+	<div id="center-container">
+		<img src="/img/index-logo.png" id="logo"/>
+		<span id="logo-desc">Make New Friends. &nbsp;Find Meetup Groups. &nbsp;It's always free.</span>
+		<button id="sign-up-button">Create an Account</button>
+		<div id="registration-form-container">
+			<form action="/scripts/form/register_submit.php" method="post" id="registrationForm" class="simform" autocomplete="on">
+				<div class="simform-inner">
+					<ol class="questions">
+						<li>
+							<span><label for="q1">Choose a Username</label></span>
+							<input autocomplete="off" id="q1" name="username" type="text"/>
+						</li>
+						<li>
+							<span><label for="q2">What is your zip code?</label></span>
+							<input autocomplete="off" id="q2" name="zip" type="text"/>
+						</li>
+						<li>
+							<span><label for="q3">What is your birthday? DD-MM-YYYY</label></span>
+							<input autocomplete="off" id="q3" name="birth" type="text"/>
+						</li>
+						<li>
+							<span><label for="q4">What is your email address?</label></span>
+							<input autocomplete="off" id="q4" name="email" type="text"/>
+						</li>
+						<li>
+							<span><label for="q5">Please confirm your email address.</label></span>
+							<input autocomplete="off" id="q5" name="email2" type="text"/>
+						</li>
+						<li>
+							<span><label for="q6">Please enter a password.</label></span>
+							<input autocomplete="off" id="q6" name="password" type="password"/>
+						</li>
+						<li>
+							<span><label for="q6">Again.</label></span>
+							<input autocomplete="off" id="q6" name="password2" type="password"/>
+						</li>
+						<li>
+							<span><label for="q6">By typing 'I Agree', you agree with our <a href="/terms-of-use">terms of use</a>.</label></span>
+							<input autocomplete="off" id="q6" name="agree" type="text"/>
+						</li>
+					</ol><!-- /questions -->
+					<button class="submit" type="submit">Send answers</button>
+					<div class="controls">
+						<button class="next"></button>
+						<div class="progress"></div>
+						<span class="number">
+							<span class="number-current"></span>
+							<span class="number-total"></span>
+						</span>
+						<span class="error-message"></span>
+					</div>
+				</div>
+				<span class="final-message"></span>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div id="bottom-half-container">
+<table id="site-desc">
+	<tr>
+		<td>
+			<div class="hex" >&#x2B22;</div>
+			<h2>Make New Friends</h2>
+			<p>
+				Whether you just moved to a new area or you just want to expand your existing circle of friends, Palibi will help you make those new connections.<br/><br/>
+				Palibi is a friend finding site that works like a dating site, so you can find friends that share your interests.
+			</p>
+		</td>
+		<td>
+			<div class="hex" >&#x2B22;</div>
+			<h2>Find Meetup Groups</h2>
+			<p>
+				Easily find activity partners and groups in your area. Find or advertise your local book club, fellow cycling enthusiasts, or local gaming group. <br/><br/>
+				It's always free to find groups, and it's always free to advertise a group that you have started.
+			</p>
+		</td>
+		<td>
+			<div class="hex" >&#x2B22;</div>
+			<h2>Create Lasting Connections</h2>
+			<p>
+				Our friendship matches are so accurate, it's creepy. <br/><br/>
+				We want to be the best source for finding friends on the internet. Our goal is for the friends you make on this website to be lifelong friends. We want to help you make lasting and valuable connections.
+			</p>
+
+		</td>
+	</tr>
+</table>
+</div>
+
+	</div>
+
+	<div id="footer-container">
+		<div id="footer">
+			<div id="copyright">
+			<div id="sitemap">
+				<a href="/find-friends">Find Friends</a>
+				<a href="/find-groups">Find Meetup Groups</a>
+				<a href="/company/">About Us</a>
+				<a href="/company/advertise">Advertise</a>
+				<a href="/company/careers">Careers</a>
+				<a href="/company/contact">Contact Us</a>
+			</div>
+			<div id="copyright-line">
+			   &copy; 2014 Palibi
+				<div id="terms">
+					<a href="/terms-of-use">Terms of Use</a>
+					<a href="/privacy-policy">Privacy Policy</a>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
+
+
